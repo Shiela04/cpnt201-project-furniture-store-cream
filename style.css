@@ -28,7 +28,7 @@ CSS STRUCTURE:
   --bs-gray-100: #f3f3f3;
   --bs-gray-200: #e7e5e2;
   --bs-primary: #787d62;
-  --bs-secondary: #F6F5F2;
+  --bs-secondary: #f6f5f2;
   --bs-primary-rgb: 120, 125, 98;
   --bs-body-bg-rgb: 246, 245, 242;
   --bs-light: #fff;
@@ -36,7 +36,6 @@ CSS STRUCTURE:
   --navbar-color-color: #131814;
   --swiper-theme-color: #787d62 !important;
   --swiper-pagination-color: #787d62 !important;
-
 }
 
 /* on mobile devices below 600px
@@ -75,7 +74,7 @@ html {
 body {
   font-family: var(--body-font);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   color: var(--accent-color);
   margin: 0;
@@ -157,7 +156,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-
   .margin-small,
   .margin-medium,
   .margin-large {
@@ -275,7 +273,7 @@ h5 {
 
 .btn.btn-full {
   display: block;
-  margin: .85em 0;
+  margin: 0.85em 0;
   width: 100%;
   letter-spacing: 0.12em;
 }
@@ -366,11 +364,11 @@ h5 {
 /*----- 6.1 Preloader
 --------------------------------------------------------------*/
 *#preloader {
-  width:100%;
-  height:100%;  
-  position:fixed;
-  z-index:20;
-  background:#ece7e1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  background: #ece7e1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +377,7 @@ h5 {
   display: inline-block;
   width: 60px;
   height: 60px;
-  border: 9px solid #Fff;
+  border: 9px solid #fff;
   animation: loader 2s infinite ease;
 }
 
@@ -395,19 +393,19 @@ h5 {
   0% {
     transform: rotate(0deg);
   }
-  
+
   25% {
     transform: rotate(180deg);
   }
-  
+
   50% {
     transform: rotate(180deg);
   }
-  
+
   75% {
     transform: rotate(360deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
   }
@@ -417,19 +415,19 @@ h5 {
   0% {
     height: 0%;
   }
-  
+
   25% {
     height: 0%;
   }
-  
+
   50% {
     height: 100%;
   }
-  
+
   75% {
     height: 100%;
   }
-  
+
   100% {
     height: 0%;
   }
@@ -455,13 +453,13 @@ h5 {
   color: var(--bs-dark);
 }
 
-.pseudo-text-effect>span {
+.pseudo-text-effect > span {
   display: inline-block;
   transform: translateY(0%);
   transition: inherit;
 }
 
-.pseudo-text-effect:hover>span {
+.pseudo-text-effect:hover > span {
   transform: translateY(-100%);
 }
 
@@ -478,7 +476,7 @@ h5 {
   min-height: 510px;
 }
 
-.jarallax>.jarallax-img {
+.jarallax > .jarallax-img {
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -501,7 +499,7 @@ h5 {
   z-index: -100;
 }
 
-@media screen and ( max-width: 991px ) {
+@media screen and (max-width: 991px) {
   .jarallax {
     min-height: 280px;
   }
@@ -562,13 +560,13 @@ h5 {
   transition: inherit;
 }
 
-.link-effect a>span {
+.link-effect a > span {
   display: inline-block;
   transform: translateY(0%);
   transition: inherit;
 }
 
-.link-effect:hover a>span {
+.link-effect:hover a > span {
   transform: translateY(-100%);
 }
 
@@ -606,7 +604,7 @@ h5 {
 }
 
 .icon-box-effect .social-links button:nth-child(1) {
-  transition: 1.0s;
+  transition: 1s;
 }
 
 .icon-box-effect .social-links button:nth-child(2) {
@@ -625,7 +623,7 @@ h5 {
   transition: 2.4s;
 }
 
-.icon-box-effect:hover>.product-card .social-links button {
+.icon-box-effect:hover > .product-card .social-links button {
   bottom: 200px;
   opacity: 1;
 }
@@ -840,7 +838,7 @@ h5 {
 }
 
 .swiper-pagination .swiper-pagination-bullet::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -854,12 +852,14 @@ h5 {
   transition: transform 0.3s ease-out;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 10px !important;
 }
 
-.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active:after,
+.swiper-pagination
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active:after,
 .swiper-pagination span.swiper-pagination-bullet:hover:after {
   transform: scale(2);
 }
@@ -914,7 +914,7 @@ h5 {
 
 /* 4. Featured Product
 /*----------------------------------------------*/
-.product-store .swiper-horizontal>.swiper-pagination-bullets,
+.product-store .swiper-horizontal > .swiper-pagination-bullets,
 .product-store .swiper-pagination-bullets.swiper-pagination-horizontal,
 .product-store .swiper-pagination-custom,
 .product-store .swiper-pagination-fraction {
